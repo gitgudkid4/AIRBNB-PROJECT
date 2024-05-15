@@ -13,45 +13,45 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await User.bulkCreate([
       {
-        username: 'Demo-lition',
-        email: 'demo@user.io',
-        firstName: "Demo",
-        lastName: "Lition",
+        username: 'TheImp',
+        email: 'terrylan@gmail.com',
+        firstName: "Tyrion",
+        lastName: "Lannister",
         hashedPassword: bcrypt.hashSync('password')
       },
       {
-        username: 'Homey',
-        email: 'homer@gmail.com',
-        firstName: "Homer",
-        lastName: "Simpson",
+        username: 'TywinLannister',
+        email: 'tywin312@gmail.com',
+        firstName: "Tywin",
+        lastName: "Lannister",
         hashedPassword: bcrypt.hashSync('password')
       },
       {
-        username: 'Margey',
-        firstName: "Marge",
-        lastName: "Simpson",
-        email: 'marge@gmail.com',
+        username: 'jimmywhisper',
+        email: 'cerseilover123',
+        firstName: "Jaime",
+        lastName: "Lannister",
         hashedPassword: bcrypt.hashSync('password')
       },
       {
-        username: 'Barty',
-        firstName: "Bart",
-        lastName: "Simpson",
-        email: 'bart@gmail.com',
+        username: 'queencersei501',
+        email: 'cersei1042@gmail.com',
+        firstName: "Cersei",
+        lastName: "Lannister",
         hashedPassword: bcrypt.hashSync('password')
       },
       {
-        username: 'Lisy',
-        firstName: "Lisa",
-        lastName: "Simpson",
-        email: 'lisa@gmail.com',
+        username: 'kingofall',
+        email: 'thebraveking@gmail.com',
+        firstName: "Joffrey",
+        lastName: "Baratheon",
         hashedPassword: bcrypt.hashSync('password')
       },
       {
-        username: 'Maggy',
-        firstName: "Maggie",
-        lastName: "Simpson",
-        email: 'maggie@gmail.com',
+        username: 'catlover123',
+        email: 'tbaratheon@gmail.com',
+        firstName: "Tommen",
+        lastName: "Baratheon",
         hashedPassword: bcrypt.hashSync('password')
       }
     ], { validate: true });
