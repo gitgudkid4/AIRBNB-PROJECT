@@ -1,58 +1,65 @@
 'use strict';
 
-const { User } = require('../models');
 const bcrypt = require("bcryptjs");
+const { User } = require('../models');
 
 let options = {};
 if (process.env.NODE_ENV === 'production') {
   options.schema = process.env.SCHEMA;  // define your schema in options object
 }
 
-/** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
+    options.tableName = "Users";
     await User.bulkCreate([
       {
-        username: 'TheImp',
-        email: 'terrylan@gmail.com',
-        firstName: "Tyrion",
-        lastName: "Lannister",
-        hashedPassword: bcrypt.hashSync('password')
+        username: 'WinterfellWarden',
+        email: 'ned.stark@gmail.com',
+        firstName: "Eddard",
+        lastName: "Stark",
+        hashedPassword: bcrypt.hashSync('winteriscoming')
       },
       {
-        username: 'TywinLannister',
-        email: 'tywin312@gmail.com',
-        firstName: "Tywin",
-        lastName: "Lannister",
-        hashedPassword: bcrypt.hashSync('password')
+        username: 'LadyCatelyn',
+        email: 'catelyn.tully@gmail.com',
+        firstName: "Catelyn",
+        lastName: "Stark",
+        hashedPassword: bcrypt.hashSync('motherofnorth')
       },
       {
-        username: 'jimmywhisper',
-        email: 'cerseilover123',
-        firstName: "Jaime",
-        lastName: "Lannister",
-        hashedPassword: bcrypt.hashSync('password')
+        username: 'KingInTheNorth',
+        email: 'robb.stark@gmail.com',
+        firstName: "Robb",
+        lastName: "Stark",
+        hashedPassword: bcrypt.hashSync('kinginthenorth')
       },
       {
-        username: 'queencersei501',
-        email: 'cersei1042@gmail.com',
-        firstName: "Cersei",
-        lastName: "Lannister",
-        hashedPassword: bcrypt.hashSync('password')
+        username: 'LadySansa',
+        email: 'sansa.stark@gmail.com',
+        firstName: "Sansa",
+        lastName: "Stark",
+        hashedPassword: bcrypt.hashSync('ladyofwinterfell')
       },
       {
-        username: 'kingofall',
-        email: 'thebraveking@gmail.com',
-        firstName: "Joffrey",
-        lastName: "Baratheon",
-        hashedPassword: bcrypt.hashSync('password')
+        username: 'NoOne',
+        email: 'arya.stark@gmail.com',
+        firstName: "Arya",
+        lastName: "Stark",
+        hashedPassword: bcrypt.hashSync('nofacedeath')
       },
       {
-        username: 'catlover123',
-        email: 'tbaratheon@gmail.com',
-        firstName: "Tommen",
-        lastName: "Baratheon",
-        hashedPassword: bcrypt.hashSync('password')
+        username: 'ThreeEyedRaven',
+        email: 'bran.stark@gmail.com',
+        firstName: "Bran",
+        lastName: "Stark",
+        hashedPassword: bcrypt.hashSync('threeyeedraven')
+      },
+      {
+        username: 'YoungWolf',
+        email: 'rickon.stark@gmail.com',
+        firstName: "Rickon",
+        lastName: "Stark",
+        hashedPassword: bcrypt.hashSync('youngwolf')
       }
     ], { validate: true });
   },
@@ -61,7 +68,7 @@ module.exports = {
     options.tableName = 'Users';
     const Op = Sequelize.Op;
     return queryInterface.bulkDelete(options, {
-      username: { [Op.in]: ["Demo-lition", "Homey", "Margey", "Barty", "Lisy", "Maggy"] }
+      username: { [Op.in]: ["WinterfellWarden", "LadyCatelyn", "KingInTheNorth", "LadySansa", "NoOne", "ThreeEyedRaven", "YoungWolf"] }
     }, {});
   }
 };
