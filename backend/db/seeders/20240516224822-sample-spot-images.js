@@ -13,307 +13,306 @@ module.exports = {
     await SpotImage.bulkCreate([
       {
         spotId: 1,
-        url: "https://images.app.goo.gl/xyz1",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 1,
-        url: "https://images.app.goo.gl/xyz1",
+        url: "https://images.mansionglobal.com//im-6970601",
         preview: false
       },
       {
         spotId: 1,
-        url: "https://images.app.goo.gl/xyz1",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 2,
-        url: "https://images.app.goo.gl/xyz2",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 2,
-        url: "https://images.app.goo.gl/xyz2",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 2,
-        url: "https://images.app.goo.gl/xyz2",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 3,
-        url: "https://images.app.goo.gl/xyz3",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 3,
-        url: "https://images.app.goo.gl/xyz3",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 3,
-        url: "https://images.app.goo.gl/xyz3",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 4,
-        url: "https://images.app.goo.gl/xyz4",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 4,
-        url: "https://images.app.goo.gl/xyz4",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 4,
-        url: "https://images.app.goo.gl/xyz4",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 5,
-        url: "https://images.app.goo.gl/xyz5",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 5,
-        url: "https://images.app.goo.gl/xyz5",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 5,
-        url: "https://images.app.goo.gl/xyz5",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 6,
-        url: "https://images.app.goo.gl/xyz6",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 6,
-        url: "https://images.app.goo.gl/xyz6",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 6,
-        url: "https://images.app.goo.gl/xyz6",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 7,
-        url: "https://images.app.goo.gl/xyz7",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 7,
-        url: "https://images.app.goo.gl/xyz7",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 7,
-        url: "https://images.app.goo.gl/xyz7",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 8,
-        url: "https://images.app.goo.gl/xyz8",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 8,
-        url: "https://images.app.goo.gl/xyz8",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 8,
-        url: "https://images.app.goo.gl/xyz8",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 9,
-        url: "https://images.app.goo.gl/xyz9",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 9,
-        url: "https://images.app.goo.gl/xyz9",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 9,
-        url: "https://images.app.goo.gl/xyz9",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 10,
-        url: "https://images.app.goo.gl/xyz10",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 10,
-        url: "https://images.app.goo.gl/xyz10",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 10,
-        url: "https://images.app.goo.gl/xyz10",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 11,
-        url: "https://images.app.goo.gl/xyz11",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 11,
-        url: "https://images.app.goo.gl/xyz11",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 11,
-        url: "https://images.app.goo.gl/xyz11",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 12,
-        url: "https://images.app.goo.gl/xyz12",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 12,
-        url: "https://images.app.goo.gl/xyz12",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 12,
-        url: "https://images.app.goo.gl/xyz12",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 13,
-        url: "https://images.app.goo.gl/xyz13",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 13,
-        url: "https://images.app.goo.gl/xyz13",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 13,
-        url: "https://images.app.goo.gl/xyz13",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 14,
-        url: "https://images.app.goo.gl/xyz14",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 14,
-        url: "https://images.app.goo.gl/xyz14",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 14,
-        url: "https://images.app.goo.gl/xyz14",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 15,
-        url: "https://images.app.goo.gl/xyz15",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 15,
-        url: "https://images.app.goo.gl/xyz15",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 15,
-        url: "https://images.app.goo.gl/xyz15",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 16,
-        url: "https://images.app.goo.gl/xyz16",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 16,
-        url: "https://images.app.goo.gl/xyz16",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 16,
-        url: "https://images.app.goo.gl/xyz16",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 17,
-        url: "https://images.app.goo.gl/xyz17",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 17,
-        url: "https://images.app.goo.gl/xyz17",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 17,
-        url: "https://images.app.goo.gl/xyz17",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 18,
-        url: "https://images.app.goo.gl/xyz18",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 18,
-        url: "https://images.app.goo.gl/xyz18",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 18,
-        url: "https://images.app.goo.gl/xyz18",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 19,
-        url: "https://images.app.goo.gl/xyz19",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 19,
-        url: "https://images.app.goo.gl/xyz19",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 19,
-        url: "https://images.app.goo.gl/xyz19",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 20,
-        url: "https://images.app.goo.gl/xyz20",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: true
       },
       {
         spotId: 20,
-        url: "https://images.app.goo.gl/xyz20",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       },
       {
         spotId: 20,
-        url: "https://images.app.goo.gl/xyz20",
+        url: "https://images.mansionglobal.com//im-697060",
         preview: false
       }
     ], { validate: true });
   },
-
 
   async down(queryInterface, Sequelize) {
     options.tableName = "SpotImages";
