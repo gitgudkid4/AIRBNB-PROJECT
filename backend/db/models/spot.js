@@ -27,6 +27,11 @@ module.exports = (sequelize, DataTypes) => {
     state: {
       type: DataTypes.STRING(2),
       allowNull: false
+      // validate: {
+      //   isAlpha: true,
+      //   isUppercase: true,
+      //   len: [2, 2]
+      // }
     },
     country: {
       type: DataTypes.STRING,
@@ -43,6 +48,9 @@ module.exports = (sequelize, DataTypes) => {
     name: {
       type: DataTypes.STRING(50),
       allowNull: false,
+      // validate: {
+      //   len: [4, 50]
+      // }
     },
     description: {
       type: DataTypes.STRING,
