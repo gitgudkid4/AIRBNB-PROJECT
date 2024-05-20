@@ -13,27 +13,21 @@ const isProduction = environment === 'production';
 const routes = require('./routes');
 
 const app = express();
+
 app.use(morgan('dev'));
 app.use(cookieParser());
 app.use(express.json());
 
-
-// security middleware
 if (!isProduction) {
-  // enable cors only in development
   app.use(cors());
 }
 
-
-// helmet helps set a variety of headers to better secure your app
 app.use(
   helmet.crossOriginResourcePolicy({
     policy: "cross-origin"
   })
 );
 
-
-// set the _csrf token and create req.csrfToken method
 app.use(
   csurf({
     cookie: {
@@ -44,7 +38,6 @@ app.use(
   })
 );
 
-
 app.get("/", async (req, res) => {
   res.send("Hello, welcome to my backend site!");
 });
@@ -52,8 +45,6 @@ app.get("/", async (req, res) => {
 
 app.use(routes);
 
-
-// catch unhandled requests and forward to error handler
 app.use((_req, _res, next) => {
   const err = new Error("The requested resource couldn't be found.");
   err.title = "Resource Not Found";
@@ -62,7 +53,6 @@ app.use((_req, _res, next) => {
   next(err);
 });
 
-// process sequelize errors
 app.use((err, _req, _res, next) => {
   // check if error is a Sequelize error
   if (err instanceof ValidationError) {
@@ -76,13 +66,11 @@ app.use((err, _req, _res, next) => {
   next(err);
 });
 
-
-// error formatter
 app.use((err, _req, res, _next) => {
   res.status(err.status || 500);
   console.error(err);
   res.json({
-    // title: err.title || 'Server Error',
+    title: err.title || 'Server Error',
     message: err.message,
     errors: err.errors,
     stack: isProduction ? null : err.stack
