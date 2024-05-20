@@ -2,29 +2,39 @@
 
 let options = {};
 if (process.env.NODE_ENV === 'production') {
-  options.schema = process.env.SCHEMA; // define your schema in options object
+  options.schema = process.env.SCHEMA;
 }
 
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('ReviewImages', {
+    await queryInterface.createTable('Reviews', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      reviewId: {
+      spotId: {
+        type: Sequelize.INTEGER,
+        allowNull: false,
+        references: { model: "Spots" },
+        onDelete: "CASCADE"
+      },
+      userId: {
         type: Sequelize.INTEGER,
         allowNull: false,
         references: {
-          model: "Reviews",
+          model: "Users",
           key: "id"
         },
-        onDelete: "CASCADE"
+        onDelete: "SET NULL"
       },
-      url: {
+      review: {
         type: Sequelize.STRING,
+        allowNull: false
+      },
+      stars: {
+        type: Sequelize.INTEGER,
         allowNull: false
       },
       createdAt: {
@@ -40,7 +50,7 @@ module.exports = {
     }, options);
   },
   async down(queryInterface, Sequelize) {
-    options.tableName = "ReviewImages";
+    options.tableName = "Reviews";
     return queryInterface.dropTable(options);
   }
 };
